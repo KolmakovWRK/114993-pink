@@ -2,11 +2,170 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink by Kirill Kolmakov: Index</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__logo"><a href="#">pink</a></div>
+      <a class="page-header__icon  page-header__icon--burger" href="#"></a>
+      <a class="page-header__icon  page-header__icon--close" href="#"></a>
+      <nav class="nav-menu">
+        <ul class="nav-menu__list">
+          <li><a class="nav-menu__list-link" href="#">Информация</a></li>
+          <li><a class="nav-menu__list-link" href="#">Возможности</a></li>
+          <li><a class="nav-menu__list-link" href="#">Отзывы</a></li>
+          <li><a class="nav-menu__list-link" href="#">Стоимость</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main>
+      <div class="intro">
+        <h1 class="intro__title">Взгляните на жизнь иначе</h1>
+        <div class="intro__main-picture">
+          <img src="http://placehold.it/320x313">
+        </div>
+        <div class="intro__inner-picture">
+          <img src="http://placehold.it/109x192">
+        </div>
+      </div>
 
+      <div class="application-download">
+        <div>
+          <a class="application-download__link  application-download__link--round-link" href="#">Cкачать приложение</a>
+        </div>
+
+        <ul class="application-download__apps-list">
+          <li class="application-download__apps-item">
+            <img src="http://placehold.it/50x60">
+          </li>
+          <li class="application-download__apps-item">
+            <img src="http://placehold.it/50x60">
+          </li>
+          <li class="application-download__apps-item">
+            <img src="http://placehold.it/50x60">
+          </li>
+        </ul>
+
+        <span class="application-download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+      </div>
+
+      <div class="information">
+        <span class="information__title">Устали от серости мегаполиса?</span>
+        <span class="information__title">Нам есть, что вам предложить!</span>
+
+        <div class="information__article">
+          <h2 class="information__article-title">Поднимает настроение</h2>
+          <p class="information__article-story">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="information__article">
+          <h2 class="information__article-title">Меняет мир вокруг</h2>
+          <p class="information__article-story">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="information__article">
+          <h2 class="information__article-title">Заводит новых друзей</h2>
+          <p class="information__article-story">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+
+        <div class="information__picture">
+          <img src="http://placehold.it/160x320">
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="slider">
+          <div class="slider__list">
+            <div class="review__item">
+              <h2 class="review__author">Николай Петров</h2>
+              <p class="review__story">
+                &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+              </p>
+            </div>
+            <div class="review__item">
+              <h2 class="review__author">Lorem ipsum</h2>
+              <p class="review__story">
+                &laquo;Еще раз: это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+              </p>
+            </div>
+            <div class="review__item">
+              <h2 class="review__author">Lorem ipsum</h2>
+              <p class="review__story">
+                &laquo;И еще раз это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+              </p>
+            </div>
+          </div>
+
+          <ul class="slider__control">
+            <li class="slider__control-element  slider__control-element--active"></li>
+            <li class="slider__control-element"></li>
+            <li class="slider__control-element"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="price">
+        <div class="slider">
+          <div class="slider__list">
+            <table class="price__table">
+              <tr>
+                <th class="price__table-head  price__table-head--hot">
+                  <span class="price__table-head-name">стандарт</span>
+                  <span class="price__table-head-price">3,99 USD</span>
+                </th>
+              </tr>
+              <tr>
+                <td>
+                  <span class="price__table-option">Розовый фильтр</span>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <span class="price__table-option">Смайлик</span>
+                  <i class="price__table-option-icon  price__table-option-icon--included"></i>
+                </td>
+                <td>
+                  <span class="price__table-option">Комментарии</span>
+                  <i class="price__table-option-icon  price__table-option-icon--excluded"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <ul class="slider__control">
+            <li class="slider__control-element  slider__control-element--active"></li>
+            <li class="slider__control-element"></li>
+            <li class="slider__control-element"></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="main-page-footer">
+      <div class="main-page-footer__contacts">
+        <span class="main-page-footer__contacts-title">Остались вопросы? Свяжитесь с нами</span>
+
+        <div class="main-page-footer__contact">
+          <h2 class="main-page-footer__contact-text">Звоните:</h2>
+          <span class="main-page-footer__contact-value">+7(812)555-66-66</span>
+        </div>
+
+        <div class="main-page-footer__contact">
+          <h2 class="main-page-footer__contact-text">Пишите:</h2>
+          <a href="#" class="main-page-footer__contact-value">mail@htmlacademy.ru</a>
+        </div>
+
+        <div class="main-page-footer__contact">
+          <h2 class="main-page-footer__contact-text">Приезжайте в гости:</h2>
+          <span class="main-page-footer__contact-value">ул. Большая Конюшенная, 19/8 </span>
+        </div>
+      </div>
+
+      <div class="address-map">
+        <iframe src="#" frameborder="0"></iframe>
+      </div>
+    </footer>
   </body>
 </html>
