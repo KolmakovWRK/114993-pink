@@ -1,8 +1,0 @@
-.main-page-footer {
-  .outline();
-  .padding();
-
-  &__contact {
-    margin: 30px auto;
-  }
-}

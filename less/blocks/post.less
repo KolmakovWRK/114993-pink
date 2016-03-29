@@ -1,8 +1,120 @@
 .post {
-  .outline();
+  font-size: 14px;
+  line-height: 24px;
   text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 
   &__author {
-    .padding();
+    padding: 0 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__author--best-post {
+    padding: 0 35px 20px 35px;
+  }
+
+  &--overall-width {
+    padding: 0;
+  }
+
+  &__picture{
+    width: 100%;
+    margin-bottom: 15px;
+    flex-grow: 0;
+  }
+
+  &__picture--full-width {
+    width: 320px;
+    height: 137px;
+    background: url("../img/panorama-mobile.jpg")no-repeat;
+    position: relative;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__like {
+    vertical-align: bottom;
+  }
+
+  &__author-name {
+    font-weight: 700;
+  }
+
+  &__author-time {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &__like-text {
+    color: #d22856;
+  }
+}
+
+@media @tablet-widths {
+  .post {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 0 0 20px 0;
+
+    &__picture--full-width {
+      width: 100%;
+      height: 510px;
+      background-size: 100% 100%;
+    }
+
+    &--overall-width {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__picture{
+      margin-bottom: 20px;
+    }
+
+    &__picture img{
+      width: 100%;
+      height: 300px;
+    }
+
+    &__author {
+      padding: 0 20px;
+    }
+
+    &__author--best-post {
+      margin-top: 0;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .post {
+    margin-bottom: 40px;
+    padding: 20px 0 20px 0;
+
+    &--overall-width {
+      margin-bottom: 0;
+    }
+
+    &__picture img{
+      width: 100%;
+      height: 400px;
+    }
+
+    &__author--best-post {
+      padding: 0 35px 0 35px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
   }
 }

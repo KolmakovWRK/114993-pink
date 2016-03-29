@@ -1,8 +1,92 @@
 .main-page-footer {
-  .outline();
-  .padding();
+  padding-top: 1px;
+
+  &__title {
+    color: #283645;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 300;
+    margin-top: 55px;
+    margin-bottom: 37px;
+  }
 
   &__contact {
-    margin: 30px auto;
+    width: 215px;
+    margin: 28px auto;
+  }
+
+  &__contact-text {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  &__contact-value {
+    color: #d22856;
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+}
+
+@media @tablet-widths {
+  .main-page-footer {
+    &__title {
+      font-size: 40px;
+      line-height: 46px;
+      font-weight: 300;
+      padding: 0 45px;
+      margin-top: 105px;
+    }
+
+    &__contacts {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    &__contact {
+      display: block;
+      position: absolute;
+      width: 240px;
+      margin: 10px 35px 40px 35px;
+    }
+
+  }
+}
+
+@media @desktop-widths {
+  .main-page-footer {
+    &__title {
+      font-size: 50px;
+      line-height: 57px;
+      font-weight: 300;
+      padding: 0 120px;
+      margin-top: 150px;
+      margin-bottom: 50px;
+    }
+
+    &__contacts {
+      display: flex;
+    }
+
+    &__contact {
+      margin: 10px 40px 40px 40px;
+    }
+
+    &__contact--phone {
+      order: 1;
+    }
+
+    &__contact--email {
+      order: 3;
+    }
+
+    &__contact--address {
+      order: 2;
+    }
+
+    &__contact-text {
+      margin-bottom: 25px;
+    }
   }
 }

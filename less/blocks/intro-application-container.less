@@ -1,0 +1,35 @@
+.intro-application-container {
+  width: 320px;
+  height: 501px;
+  position: relative;
+  z-index: 45;
+  top: -110px;
+  margin-bottom: -110px;
+  background-color: #000000;
+  background: url("../img/back-desktopjpg.png")no-repeat;
+
+  &--intro-application-correct{
+    height: 280px;
+  }
+}
+
+@media @tablet-widths {
+  .intro-application-container {
+    width: 100%;
+    height: 440px;
+
+    &--main {
+      height: 729px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .intro-application-container {
+    height: 395px;
+
+    &--main {
+      height: 853px;
+    }
+  }
+}

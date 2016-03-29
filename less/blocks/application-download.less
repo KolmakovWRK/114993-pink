@@ -1,22 +1,86 @@
 .application-download {
-  .padding();
-  .outline();
+  width: 320px;
+  height: 260px;
+  margin: 501px 0 auto;
+  background-color: #1d2631;
+  padding-top: 13px;
 
   &__link {
     display: block;
-    width: 281px;
-    height: 55px;
-    .outline();
-    margin: 20px auto;
+    width: 275px;
+    height: 17px;
+    margin: 16px auto;
+    border: 3px solid #ffffff;
+    border-radius: 26px;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 17px 0;
   }
 
-  &__apps-list li{
-    .inline-block();
+  &__apps-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__apps-item {
+    margin: 0 15px;
   }
 
   &__text{
-    width: 229px;
+    width: 289px;
     height: 37px;
-    margin: 30px auto;
+    margin: 5px auto;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+@media @tablet-widths {
+  .application-download {
+    height: 305px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-color: rgba(29, 38, 49, 0.01);
+    padding-top: 0;
+
+    &__apps-list {
+      margin-top: 45px;
+    }
+
+    &__link {
+      width: 293px;
+    }
+
+    &__text {
+      width: 300px;
+      margin: 15px auto;
+      font-size: 18px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .application-download {
+    margin-left: 100px;
+    margin-top: 60px;
+
+    &__link {
+      font-size: 21px;
+    }
+
+    &__apps-list {
+      margin-top: 55px;
+    }
+
+    &__text {
+      margin: 41px auto;
+    }
   }
 }

@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Pink by Kirill Kolmakov: Form</title>
-  <link href="css/style.css" rel="stylesheet">
-  </head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
   <body>
-   <header class="page-header">
-    <div class="page-header__logo"><a href="#">pink</a></div>
-    <a class="page-header__icon  page-header__icon--burger" href="#"></a>
-    <a class="page-header__icon  page-header__icon--close" href="#"></a>
+  <header class="page-header">
+    <div class="page-header__toggle-menu">
+      <div class="page-header__toggle-menu-logo"><a href="#">pink</a></div>
+      <a class="page-header__toggle-menu-icon  page-header__toggle-menu-icon--burger" href="#"></a>
+      <a class="page-header__toggle-menu-icon  page-header__toggle-menu-icon--close" href="#"></a>
+    </div>
     <nav class="nav-menu">
       <ul class="nav-menu__list">
-        <li><a class="nav-menu__list-link" href="#">Информация</a></li>
-        <li><a class="nav-menu__list-link" href="#">Возможности</a></li>
-        <li><a class="nav-menu__list-link" href="#">Отзывы</a></li>
-        <li><a class="nav-menu__list-link" href="#">Стоимость</a></li>
+        <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="index.html">Главная</a></li>
+        <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="photo.html">Фотографии</a></li>
+        <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="#">Конкурс</a></li>
+        <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="https://htmlacademy.ru">HTML Academy</a></li>
       </ul>
     </nav>
   </header>
 
     <main>
-      <div class="intro-form">
-        <h1 class="intro-form__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <div class="intro-application-container  intro-application-container--intro-application-correct">
+        <div class="intro">
+          <h1 class="intro__title  intro__title--correct-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
 
       <form class="form" action="#">
-        <p class="form__intro-text">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          Пожалуйста, заполните форму ниже:
-        </p>
-
-        <div class="fieldset">
-          <label><span class="fieldset__text">Имя:</span>
-            <input class="fieldset__input" type="text" placeholder="Введите ваше имя">
-          </label>
-
-          <label><span class="fieldset__text">Фамилия:</span>
-            <input class="fieldset__input" type="text" placeholder="Укажите фамилию">
-          </label>
-
-          <label><span class="fieldset__text">Отчество:</span>
-            <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже">
-          </label>
+        <div class="intro-inner  intro-inner--intro-form">
+          <span class="intro-inner__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          </span><span class="intro-inner__text  intro-inner__text--hidden">Пожалуйста, заполните форму ниже:</span>
         </div>
 
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">Ваши безбашенные достижения в путешествии</h2>
+        <div class="form__container  form__container--user-initials-container">
+          <div class="fieldset  fieldset--user-initials">
+            <label class="fieldset__label">
+              <span class="fieldset__text">Имя:</span>
+              <input class="fieldset__input  fieldset__input--correct" type="text" placeholder="Введите ваше имя">
+            </label>
 
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
-            <label class="fieldset__checkbox-label" for="first-achievement-selfie">Сделал селфи с акулой</label>
-          </div>
+            <label class="fieldset__label">
+              <span class="fieldset__text">Фамилия:</span>
+              <input class="fieldset__input" type="text" placeholder="Укажите фамилию">
+            </label>
 
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="second-achievement-burned" type="checkbox" checked>
-            <label class="form__user-achievements-text" for="second-achievement-burned">Обгорел на пляже</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="third-achievement-see-chuck" type="checkbox">
-            <label class="form__user-achievements-text" for="third-achievement-see-chuck">Видел Чака Норриса</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="fourth-achievement-souvenir" type="checkbox">
-            <label class="form__user-achievements-text" for="fourth-achievement-souvenir">Накупил сувениров</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="fifth-achievement-withheld" type="checkbox" checked>
-            <label class="form__user-achievements-text" for="fifth-achievement-withheld">Удержал башню</label>
-          </div>
-
-          <div class="fieldset__checkbox-block">
-            <input class="fieldset__checkbox" id="sixth-achievement-smash" type="checkbox">
-            <label class="form__user-achievements-text" for="sixth-achievement-smash">Разгромил отель</label>
+            <label class="fieldset__label">
+              <span class="fieldset__text">Отчество:</span>
+              <input class="fieldset__input" type="text" placeholder="Ну и отчество тоже">
+            </label>
           </div>
         </div>
 
-        <div class="fieldset">
-          <label><span class="fieldset__text">Номерок телефончика</span>
-            <input type="tel" placeholder="Номер, пожалуйста">
-          </label>
+        <div class="form__container  form__container--user-achievements-container">
+          <div class="fieldset  fieldset--checkbox-block-container">
+            <h2 class="fieldset__text  fieldset__text--title-checkbox">Ваши безбашенные достижения в путешествии</h2>
 
-          <label><span class="fieldset__text">адресок почты</span>
-            <input type="text" placeholder="E-mail, пожалуйста">
-          </label>
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="first-achievement-selfie" type="checkbox" checked>
+              <label class="fieldset__checkbox-label" for="first-achievement-selfie">Сделал селфи с акулой</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="second-achievement-burned" type="checkbox" checked>
+              <label class="fieldset__checkbox-label" for="second-achievement-burned">Обгорел на пляже</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="third-achievement-see-chuck" type="checkbox">
+              <label class="fieldset__checkbox-label" for="third-achievement-see-chuck">Видел Чака Норриса</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="fourth-achievement-souvenir" type="checkbox">
+              <label class="fieldset__checkbox-label" for="fourth-achievement-souvenir">Накупил сувениров</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="fifth-achievement-withheld" type="checkbox" checked>
+              <label class="fieldset__checkbox-label" for="fifth-achievement-withheld">Удержал башню</label>
+            </div>
+
+            <div class="fieldset__checkbox-block">
+              <input class="fieldset__checkbox" id="sixth-achievement-smash" type="checkbox">
+              <label class="fieldset__checkbox-label" for="sixth-achievement-smash">Разгромил отель</label>
+            </div>
+          </div>
         </div>
 
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">С каким приложением путешествовали?</h2>
-
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="first-device-iOS" name="user-device" checked>
-            <label class="form__user-devices-text" for="first-device-iOS">Pink для iOS</label>
-          </div>
-
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="second-device-android" name="user-device">
-            <label class="form__user-devices-text" for="second-device-android">Pink на Android</label>
-          </div>
-
-          <div class="fieldset__devices-element">
-            <input class="fieldset__radio" type="radio" id="third-device-windows" name="user-device">
-            <label class="form__user-devices-text" for="third-device-windows">Windows Phone</label>
+        <div class="form__container  form__container--contact-information-container">
+          <div class="fieldset  fieldset--contact-information">
+            <h2 class="fieldset__text  fieldset__text--title-contact">Контактная информация</h2>
+            <div class="fieldset__item-contact">
+              <span class="fieldset__text  fieldset__text-hidden-mobile">Номерок телефончика</span>
+              <span class="fieldset__text-hidden  fieldset__text--contact-information">Номер телефона</span>
+              <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+            </div>
+            <div class="fieldset__item-contact">
+              <span class="fieldset__text  fieldset__text-hidden-mobile">Aдресок почты</span>
+              <span class="fieldset__text-hidden  fieldset__text--contact-information">Адрес почты</span>
+              <input class="fieldset__input  fieldset__input--contact-information" type="text" placeholder="Введите почту">
+            </div>
           </div>
         </div>
 
-        <div class="fieldset">
-          <h2 class="fieldset__text  fieldset__text--title">Опишите свои эмоции</h2>
-          <textarea class="fieldset__textarea" name="user-review" placeholder="Можно прям в красках,
-          не стесняясь в выражениях"></textarea>
+        <div class="form__container  form__container--device-container">
+          <div class="fieldset">
+            <h2 class="fieldset__text  fieldset__text--title">С каким приложением путешествовали?</h2>
+
+            <div class="fieldset__devices-element  fieldset__devices-element--correct">
+              <input class="fieldset__radio" type="radio" id="first-device-iOS" name="user-device" checked>
+              <label class="fieldset__radio-label" for="first-device-iOS">Pink для iOS</label>
+            </div>
+
+            <div class="fieldset__devices-element">
+              <input class="fieldset__radio" type="radio" id="second-device-android" name="user-device">
+              <label class="fieldset__radio-label" for="second-device-android">Pink на Android</label>
+            </div>
+
+            <div class="fieldset__devices-element  fieldset__devices-element--bottom">
+              <input class="fieldset__radio" type="radio" id="third-device-windows" name="user-device">
+              <label class="fieldset__radio-label" for="third-device-windows">Windows Phone</label>
+            </div>
+          </div>
         </div>
 
-        <button type="submit" class="fieldset__submit-btn">Отправить форму</button>
-        <p><span class="fieldset__star">*</span> &mdash; обязательные поля</p>
+        <div class="form__container  form__container--user-review">
+          <div class="fieldset">
+            <h2 class="fieldset__text  fieldset__text--title-user-review">Опишите свои эмоции</h2>
+
+            <textarea class="fieldset__textarea" name="user-review"
+                      placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </div>
+
+        <div class="form__container  form__container--submit">
+            <button type="submit" class="form__submit-btn">Отправить форму</button>
+
+          <div class="form__submit-text-required-fields">
+            <span class="form__submit-star">*</span> &mdash; обязательные поля
+          </div>
+        </div>
 
 
 
@@ -140,22 +169,26 @@
     </main>
 
     <footer class="page-footer">
-      <div class="logo">
-        <a href="#"><img src="http://placehold.it/160x60"/></a>
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li><a href="#" class="social__icon  social__icon--twitter"><i></i></a></li>
-          <li><a href="#" class="social__icon  social__icon--facebook"><i></i></a></li>
-          <li><a href="#" class="social__icon  social__icon--youtube"><i></i></a></li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <div class="page-footer__copyright-text">
-          <p>Разработано</p>
+      <div class="page-footer__page-footer-inner-container">
+        <div class="logo">
+          <a href="#"><img src="http://placehold.it/160x60"/></a>
         </div>
-        <div class="page-footer__copyright-logo">
-          <a href="#"><img src="http://placehold.it/30x40"/></a>
+        <div class="social">
+          <ul class="social__list">
+            <li><a href="#" class="social__icon  social__icon--twitter"><i></i></a></li>
+            <li><a href="#" class="social__icon  social__icon--facebook"><i></i></a></li>
+            <li><a href="#" class="social__icon  social__icon--youtube"><i></i></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <ul class="page-footer__copyright-list">
+            <li>
+              <p class="page-footer__copyright-text">Разработано</p>
+            </li>
+            <li>
+              <a class="page-footer__copyright-logo" href="#"><img src="http://placehold.it/30x40"/></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

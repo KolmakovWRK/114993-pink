@@ -1,0 +1,44 @@
+.address-map {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: url("../img/bg-map.png")no-repeat;
+  background-size: 100%;
+
+  &__decorative-element {
+    display: block;
+    position: absolute;
+    border-top: 50px solid #ffffff;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+  }
+
+  &__iframe {
+    width: 100%;
+  }
+}
+
+@media @tablet-widths {
+  .address-map {
+    width: 100%;
+    height: 380px;
+
+    &__decorative-element {
+      border-top: 65px solid #ffffff;
+      border-left: 330px solid transparent;
+      border-right: 330px solid transparent;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .address-map {
+    height: 500px;
+
+    &__decorative-element {
+      border-top: 105px solid #ffffff;
+      border-left: 480px solid transparent;
+      border-right: 480px solid transparent;
+    }
+  }
+}

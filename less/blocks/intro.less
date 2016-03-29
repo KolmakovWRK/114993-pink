@@ -1,13 +1,74 @@
-.intro{
-  .outline();
+.intro {
+  /*display: block;*/
+  padding: 0 20px;
+  margin-top: 140px;
 
-  &__hand-phone-picture{
-    position: relative;
+  &__title {
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
   }
 
-  &__inner-picture{
-    .position-absolute();
-    top: 189px;
-    margin-left: 100px;
+  &--correct-intro {
+    padding: 0 70px;
+  }
+}
+
+.intro--main{
+  display: none;
+}
+
+@media @tablet-widths{
+  .intro {
+    margin-top: 180px;
+
+    &__title {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &--main{
+      display: block;
+      width: 30%;
+      height: 150px;
+      margin-left: 50px;
+      margin-top: 205px;
+    }
+
+    &__title--correct-title {
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 300;
+    }
+
+    &--correct-intro {
+      padding: 0 70px;
+      margin-top: 180px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .intro {
+    &--main {
+      height: 177px;
+      margin-left: 100px;
+      margin-top: 220px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 59px;
+    }
+
+    &--correct-intro {
+      margin-top: 175px;
+    }
+
+    &__title--correct-title {
+      padding: 0 85px;
+    }
   }
 }

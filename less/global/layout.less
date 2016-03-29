@@ -1,5 +1,34 @@
-body{
-  width: 320px;
-  margin: 0px auto;
+body {
+  margin: 0 auto;
   text-align: center;
+  font-family:"opensans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  width: 320px;
+  color: #283645;
+}
+
+h1, h2 {
+  color: #000000;
+}
+
+@media @tablet-widths {
+  body {
+    width: 660px;
+  }
+}
+
+@media @desktop-widths {
+  body {
+    width: 960px;
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
 }

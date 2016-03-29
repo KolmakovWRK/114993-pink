@@ -1,9 +1,26 @@
-.page-header{
-  width: 100%;
+.page-header {
+  position: relative;
+  z-index: 50;
 
-  &__toggle-menu{
-    height: 66px;
+  &__toggle-menu {
     text-align: left;
-    .outline();
+    height: 66px;
+    background-color: rgba(0, 0, 0, 0.36);
+  }
+}
+
+@media @tablet-widths {
+  .page-header {
+    &__toggle-menu {
+      height: 110px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+    &__toggle-menu {
+      display: none;
+    }
   }
 }
