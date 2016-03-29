@@ -1,6 +1,6 @@
 .fieldset {
-
-  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
   text-align: left;
 
   &--user-initials {
@@ -106,6 +106,7 @@
 
 @media @tablet-widths {
   .fieldset {
+    width: 620px;
     position: relative;
     text-align: center;
     border: 2px solid #e5e5e5;
@@ -114,14 +115,12 @@
       border: 2px solid #ffffff;
     }
 
-
     &--contact-information {
-      padding: 45px 60px 0 60px;
       text-align: center;
+      padding-top: 40px;
     }
 
     &--checkbox-block-container {
-      padding: 15px 60px 0 60px;
       margin-bottom: 70px;
     }
 
@@ -134,6 +133,14 @@
       width: 86.4%;
     }
 
+    &__checkbox-block {
+      margin: 40px 60px;
+    }
+
+    &__checkbox-label {
+      left: 60px;
+    }
+
     &__item-contact {
       display: flex;
       flex-direction: column-reverse;
@@ -141,8 +148,8 @@
     }
 
     &__input--contact-information {
-      width: 96%;
-      margin: 0;
+      width: 77%;
+      margin: 0 auto;
     }
 
     &__text-hidden-mobile {
@@ -159,7 +166,7 @@
     &__text--contact-information {
       text-align: left;
       line-height: 55px;
-      padding-left: 20px;
+      padding-left: 80px;
     }
 
     &__text {
@@ -168,7 +175,7 @@
     }
 
     &__devices-element {
-      margin-left: 40px;
+      margin-left: 60px;
     }
 
     &__devices-element--correct {
@@ -219,9 +226,20 @@
 
 @media @desktop-widths {
   .fieldset {
+    width: 940px;
+
+    &--user-initials {
+      width: 435px;
+      margin-top: -10px ;
+      margin-left: 1px;
+    }
+
+    &--devices {
+      width: 435px;
+    }
 
     &__devices-element {
-      margin-left: 55px;
+      margin-left: 80px;
     }
 
     &__input {

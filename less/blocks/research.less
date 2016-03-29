@@ -10,6 +10,28 @@
 
     &__research-container {
       display: inline-flex;
+      position: relative;
+    }
+
+    &__picture-timer svg {
+      width: 240px;
+      height: 280px;
+    }
+
+    &__picture-timer:before {
+      content: "24";
+      position: absolute;
+      left: 20px;
+      display: block;
+      width: 175px;
+      height: 175px;
+      border: 13px solid #d22856;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 96px;
+      line-height: 160px;
+      color: #d22856;
+      font-weight: 700;
     }
 
     &__text {

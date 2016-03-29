@@ -1,4 +1,6 @@
 .post {
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 24px;
   text-align: left;
@@ -19,7 +21,9 @@
   }
 
   &--overall-width {
+    width: 320px;
     padding: 0;
+    margin-bottom: 8px;
   }
 
   &__picture{
@@ -29,9 +33,10 @@
   }
 
   &__picture--full-width {
-    width: 320px;
+    min-width: 320px;
     height: 137px;
-    background: url("../img/panorama-mobile.jpg")no-repeat;
+    background: url("../img/panorama-mobile.jpg")no-repeat center;
+    background-size: 100% 100%;
     position: relative;
   }
 
@@ -61,18 +66,21 @@
 @media @tablet-widths {
   .post {
     width: 300px;
-    margin-bottom: 30px;
-    padding: 0 0 20px 0;
+    height: 450px;
+    margin-bottom: 25px;
+    padding: 0;
 
     &__picture--full-width {
       width: 100%;
       height: 510px;
-      background-size: 100% 100%;
+      background: url("../img/panorama-tablet@2x.jpg")no-repeat center;
+      background-size: 100% 510px;
     }
 
     &--overall-width {
       width: 100%;
-      margin-bottom: 30px;
+      height: auto;
+      margin-bottom: 75px;
     }
 
     &__picture{
@@ -85,11 +93,28 @@
     }
 
     &__author {
-      padding: 0 20px;
+      padding: 0 30px;
     }
 
     &__author--best-post {
       margin-top: 0;
+      padding: 0 45px;
+      position: relative;
+    }
+
+    &__text--best {
+      width: 530px;
+    }
+
+    &__like-text--best {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 80px;
+    }
+
+    &__like-text {
+      margin-bottom: 20px;
     }
   }
 }
@@ -98,23 +123,36 @@
 @media @desktop-widths {
   .post {
     margin-bottom: 40px;
-    padding: 20px 0 20px 0;
+    padding: 0;
+    height: 555px;
 
     &--overall-width {
       margin-bottom: 0;
+      height: 510px;
     }
 
-    &__picture img{
+    &__picture--full-width {
       width: 100%;
-      height: 400px;
+      height: 510px;
+      background: url("../img/panorama-desktop@2x.jpg")no-repeat center;
+      background-size: 100% 510px;
     }
 
     &__author--best-post {
       padding: 0 35px 0 35px;
     }
 
+    &__picture img{/*после ставки картинки удалить*/
+      width: 100%;
+      height: 400px;
+    }
+
     &__text {
       margin-bottom: 10px;
+    }
+
+    &__text--best {
+      width: 100%;
     }
   }
 }

@@ -1,12 +1,16 @@
 .price {
-  margin-top: 107px;
+  margin-top: 115px;
 
-  &__table {
-    border: 1px solid #FFFFFF;
+  &__table-mobile {
+   border: 1px solid #FFFFFF;
     border-collapse: collapse;
     margin: 0 auto;
-    width: 960px;
-    margin-left: -378px;
+    width: 850px;
+    margin-left: -265px;
+  }
+
+  &__table {
+    display: none;
   }
 
   &__table-head-invisible {
@@ -33,15 +37,46 @@
     text-transform: uppercase;
   }
 
-  td {
+  &__table-cell {
     border: 2px solid #e5e5e5;
     height: 63px;
+    position: relative;
+    padding: 0 70px 0 25px;
   }
 
   &__table-option {
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__table-cell--included:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    top: 30%;
+    right: 8%;
+    border-radius: 3px;
+    border-bottom: 4px solid #3dc644;
+    border-left: 4px solid #3dc644;
+    transform: rotate(-45deg);
+  }
+
+  &__table-cell--exclude:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 30%;
+    right: 8%;
+    background-image: linear-gradient(45deg, transparent 46%, #f25b26 46%,
+    #f25b26 54%, transparent 54%), linear-gradient(-45deg, transparent 43%,
+    #f25b26 43%, #f25b26 52%, transparent 52%);
   }
 }
 
@@ -50,9 +85,14 @@
     width: 100%;
     margin-top: 78px;
 
+    &__table-mobile {
+      display: none;
+    }
+
     &__table {
       margin: 0 auto;
-      width: 100%;
+      width: 95%;
+      display: block;
     }
 
     &__table-head {
@@ -60,9 +100,25 @@
       height: 79px;
     }
 
-    td {
-      width: 156px;
+    &__table-option {
+      text-transform: none;
+    }
+
+    &__table-cell {
+      width: 135px;
       height: 49px;
+      padding-left: 20px;
+      padding-right: 0;
+    }
+
+    &__table-cell--included:after {
+      top: 27%;
+      left: 45%;
+    }
+
+    &__table-cell--exclude:after {
+      top: 27%;
+      left: 45%;
     }
   }
 }
@@ -76,7 +132,7 @@
       height: 98px;
     }
 
-    td {
+    &__table-cell {
       width: 237px;
       height: 63px;
     }

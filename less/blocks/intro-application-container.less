@@ -1,25 +1,51 @@
 .intro-application-container {
-  width: 320px;
-  height: 501px;
+  width: 100%;
+  height: 500px;
   position: relative;
   z-index: 45;
-  top: -110px;
+  top: -80px;
   margin-bottom: -110px;
-  background-color: #000000;
-  background: url("../img/back-desktopjpg.png")no-repeat;
+  background-color: #1d2631;
+  background: url("../img/iphone-hand-tablet@1x.png") no-repeat -128px 187px,
+  url("../img/bg-back-tablet@1x.jpg") center 10px no-repeat;
+  background-size: 402px 315px, auto 500px;
 
   &--intro-application-correct{
-    height: 280px;
+    min-width: 320px;
+    height: 250px;
+    background: transparent url("../img/bg-back-tablet@1x.jpg") center 10px no-repeat;
+    background-size: auto 500px;
+    margin-bottom: -35px;
   }
 }
 
 @media @tablet-widths {
   .intro-application-container {
     width: 100%;
-    height: 440px;
+    height: 450px;
+
+    &--intro-application-correct {
+      margin-top: -40px;
+      background: transparent url("../img/bg-back-tablet@2x.jpg") center -10px no-repeat;
+      background-size: auto 740px;
+    }
 
     &--main {
-      height: 729px;
+      height: 750px;
+      top: -130px;
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat 0 207px,
+      url("../img/bg-back-tablet@1x.jpg")  no-repeat -252px 20px;
+      background-size: 692px 543px, auto 750px;
+    }
+  }
+
+  @media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .intro-application-container {
+      background: url("../img/iphone-hand-tablet@2x.png") no-repeat 7px 207px,
+      url("../img/bg-back-tablet@2x.jpg") no-repeat -252px 20px;
+      background-size: 692px 543px, auto 730px;
     }
   }
 }
@@ -28,8 +54,17 @@
   .intro-application-container {
     height: 395px;
 
+    &--intro-application-correct {
+      width: 100%;
+      background: transparent url("../img/bg-back-tablet@2x.jpg") center -413px no-repeat;
+      background-size: auto;
+    }
+
     &--main {
-      height: 853px;
+      height: 875px;
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat 600px 238px,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat -1001px -1115px;
+      background-size: 824px 637px, auto 2371px;
     }
   }
 }

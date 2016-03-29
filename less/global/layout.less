@@ -6,8 +6,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  width: 320px;
   color: #283645;
+}
+
+.layout-center-wrapper {
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 h1, h2 {
@@ -15,19 +19,18 @@ h1, h2 {
 }
 
 @media @tablet-widths {
-  body {
+  .layout-center-wrapper {
     width: 660px;
   }
 }
 
 @media @desktop-widths {
-  body {
+  .layout-center-wrapper {
     width: 960px;
   }
 }
 
 main {
-  width: 100%;
   display: flex;
   flex-wrap:wrap;
   justify-content: space-around;

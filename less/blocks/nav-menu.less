@@ -1,13 +1,23 @@
 .nav-menu {
+ width: 100%;
   display: none;
 
+  &__list-item {
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+  }
+
   &__list-link {
+    display: block;
     color: #ffffff;
     font-family:"opensans", Arial, sans-serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 25px 0;
+    background-color: #1d2631;
   }
 }
 
@@ -18,19 +28,28 @@
     display: flex;
     flex-direction: row-reverse;
 
+    &__list-item {
+      border: none;
+
+    }
+
     &__list {
       display: flex;
-      justify-content: flex-start;
-      width: 700px;
+      justify-content: flex-end;
       height: 50px;
-      margin-top: 30px;
     }
 
     &__list-link {
-      display: block;
       color: #ffffff;
       width: 150px;
       padding: 17px 5px;
+      margin-top: 20px;
+      margin-left: 15px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      text-transform: none;
+      background-color: rgba(29, 38, 49, 0);
     }
   }
 }
