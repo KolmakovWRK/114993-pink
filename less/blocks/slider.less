@@ -1,4 +1,7 @@
 .slider {
+  width: 320px;
+  margin: 0 auto;
+
   &__list {
     overflow: hidden;
     width: 320px;
@@ -6,12 +9,45 @@
   }
 
   &__control {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__control input[type=radio] {
+    display: none;
+  }
+
+  &__slider-controls {
+    height: 13px;
     margin: 16px auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
-  &__control-element {
+  &__slider-controls--price {
+    margin: 40px 0;
+  }
+
+  &__control-element-checked-1:checked ~ &__slider-controls  label[for="btn-1"],
+  &__control-element-checked-2:checked ~ &__slider-controls  label[for="btn-2"],
+  &__control-element-checked-3:checked ~ &__slider-controls  label[for="btn-3"]{
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    cursor: default;
+  }
+
+  &__control-element-price-checked-1:checked ~ &__slider-controls  label[for="toggle-1"],
+  &__control-element-price-checked-2:checked ~ &__slider-controls  label[for="toggle-2"],
+  &__control-element-price-checked-3:checked ~ &__slider-controls  label[for="toggle-3"]{
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    cursor: default;
+  }
+
+  &__control-element,
+  &__control-element-price {
+    display: block;
     width: 6px;
     height: 6px;
     border: 2px solid #ffffff;
@@ -20,36 +56,72 @@
     margin: 0 6px;
   }
 
-  &__control-element--active {
-    border: 3px solid #283645;
+  #btn-1:checked ~ &__list .review__container {
+    transform: translate(0)
+  }
+
+  #btn-2:checked ~ &__list .review__container {
+    transform: translate(-472px)
+  }
+
+  #btn-3:checked ~ &__list .review__container {
+    transform: translate(-944px)
   }
 
   &__control--price {
     margin: 27px auto;
   }
+
+  #toggle-1:checked ~ &__list--table .price__table-mobile {
+    transform: translate(0)
+  }
+
+  #toggle-2:checked ~ &__list--table .price__table-mobile {
+    transform: translate(-266px)
+  }
+
+  #toggle-3:checked ~ &__list--table .price__table-mobile {
+    transform: translate(-532px)
+  }
+  &__control--price {
+    margin: 27px auto;
+  }
 }
+
 
 @media @tablet-widths {
   .slider {
+    width: 660px;
+
     &__list {
       width: 660px;
     }
 
-    &__control {
-      margin: 22px auto;
+    &__control--price,
+    &__slider-controls--price {
+      display: none;
     }
 
-    &__control--price {
-      display: none;
+    #btn-1:checked ~ &__list .review__container {
+      transform: translate(-56px)
+    }
+
+    #btn-2:checked ~ &__list .review__container {
+      transform: translate(-845px)
+    }
+
+    #btn-3:checked ~ &__list .review__container {
+      transform: translate(-1635px)
     }
   }
 }
 
 @media @desktop-widths {
   .slider {
+    width: 960px;
 
     &__list {
-      width: 650px;
+      width: 692px;
       margin: 0 auto;
     }
 
@@ -57,7 +129,19 @@
       width: 960px;
     }
 
-    &__control {
+    #btn-1:checked ~ &__list .review__container {
+      transform: translate(0)
+    }
+
+    #btn-2:checked ~ &__list .review__container {
+      transform: translate(0)
+    }
+
+    #btn-3:checked ~ &__list .review__container {
+      transform: translate(0)
+    }
+
+    &__slider-controls {
       display: none;
     }
   }

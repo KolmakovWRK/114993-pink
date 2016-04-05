@@ -7,6 +7,13 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  background: #f2f2f2;
+
+  &--overall-width {
+    min-width: 320px;
+    padding: 0;
+    background: #FFFFFF;
+  }
 
   &__author {
     padding: 0 15px;
@@ -18,30 +25,26 @@
 
   &__author--best-post {
     padding: 0 35px 20px 35px;
-  }
-
-  &--overall-width {
-    width: 320px;
-    padding: 0;
-    margin-bottom: 8px;
+    background: #f2f2f2;
   }
 
   &__picture{
     width: 100%;
+    height: 180px;
     margin-bottom: 15px;
     flex-grow: 0;
+    background-color: #978F96;
   }
 
   &__picture--full-width {
-    min-width: 320px;
+    width: 100%;
     height: 137px;
-    background: url("../img/panorama-mobile.jpg")no-repeat center;
-    background-size: 100% 100%;
+    background-color: #978F96;
     position: relative;
   }
 
   &__text {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   &__like {
@@ -60,40 +63,49 @@
 
   &__like-text {
     color: #d22856;
+    position: relative;
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+
+  &__like-text:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    background-size: contain;
   }
 }
 
 @media @tablet-widths {
   .post {
     width: 300px;
-    height: 450px;
-    margin-bottom: 25px;
+    min-height: 450px;
     padding: 0;
-
-    &__picture--full-width {
-      width: 100%;
-      height: 510px;
-      background: url("../img/panorama-tablet@2x.jpg")no-repeat center;
-      background-size: 100% 510px;
-    }
+    margin-bottom: 25px;
 
     &--overall-width {
       width: 100%;
       height: auto;
-      margin-bottom: 75px;
+      margin-bottom: 65px;
     }
 
     &__picture{
+      height: 300px;
       margin-bottom: 20px;
     }
 
-    &__picture img{
+    &__picture--full-width {
       width: 100%;
-      height: 300px;
+      height: 510px;
     }
 
     &__author {
-      padding: 0 30px;
+      padding: 0 25px;
     }
 
     &__author--best-post {
@@ -106,6 +118,10 @@
       width: 530px;
     }
 
+    &__text {
+      margin-bottom: 15px;
+    }
+
     &__like-text--best {
       display: block;
       position: absolute;
@@ -114,7 +130,19 @@
     }
 
     &__like-text {
+      display: block;
       margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &__like-text:before {
+      left: 230px;
+    }
+
+    &__like-text--best:before {
+      left: 110px;
     }
   }
 }
@@ -122,29 +150,26 @@
 
 @media @desktop-widths {
   .post {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     padding: 0;
-    height: 555px;
+    min-height: 555px;
 
     &--overall-width {
-      margin-bottom: 0;
-      height: 510px;
+      margin-bottom: 55px;
+    }
+
+    &__picture{
+      height: 400px;
     }
 
     &__picture--full-width {
       width: 100%;
-      height: 510px;
-      background: url("../img/panorama-desktop@2x.jpg")no-repeat center;
-      background-size: 100% 510px;
+      height: 507px;
     }
 
     &__author--best-post {
       padding: 0 35px 0 35px;
-    }
-
-    &__picture img{/*после ставки картинки удалить*/
-      width: 100%;
-      height: 400px;
+      margin-bottom: 10px;
     }
 
     &__text {
@@ -153,6 +178,8 @@
 
     &__text--best {
       width: 100%;
+      margin-bottom: 10px;
     }
+
   }
 }

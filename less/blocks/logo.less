@@ -2,4 +2,80 @@
   width: 250px;
   height: 60px;
   .margin-block-footer();
+
+  &--nav-menu svg {
+    fill: #ffffff;
+  }
+
+  &__logo-item ,
+  &__logo-mobile-nav-menu,
+  &__logo-item-page-footer {
+    display: none;
+  }
+
+  &__logo-main--nav-menu {
+    float: left;
+    margin-left: -50px;
+  }
+
+  &--nav-menu svg:hover,
+  &--page-footer svg:hover{
+    fill: #d22856;
+  }
+
+  &--nav-menu svg:active,
+  &--page-footer svg:active{
+    fill: #6c7682;
+  }
+
+  &__logo-mobile-page-footer:active {
+    fill: #6c7682;
+  }
+
+  &__logo-mobile-page-footer {
+    fill: #d22856;
+  }
+}
+
+@media @tablet-widths {
+
+  .logo {
+    &__logo-mobile-nav-menu {
+      display: block;
+    }
+
+    &__logo-main--nav-menu {
+      margin-top: 31px;
+      float: left;
+      margin-left: 40px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .logo {
+
+    &__logo-mobile-nav-menu {
+      display: none;
+    }
+
+    &__logo-item,
+    &__logo-mobile-page-footer,
+    &__logo-item-page-footer {
+      display: block;
+    }
+
+    &__logo-mobile-page-footer {
+      fill: #d22856;
+    }
+
+    &__logo-item-page-footer {
+      fill: #000000;
+    }
+
+    .logo__logo-main--nav-menu {
+      margin-left: 15px;
+      margin-right: 10px;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .photo-upload {
-margin-top: 40px;
+  margin-top: 40px;
 
   &__head-text {
     font-size: 14px;
@@ -8,8 +8,9 @@ margin-top: 40px;
     padding: 0 24px;
   }
 
-  &__container-text {
-    margin-bottom: 60px;
+  &__container-inner {
+    background: #f2f2f2;
+    padding: 65px 0 1px 0;
   }
 
   &__tools {
@@ -19,10 +20,6 @@ margin-top: 40px;
   &__tools-list {
     display: flex;
     justify-content: center;
-  }
-
-  &__tool-icon {
-    margin: 7px 15px;
   }
 
   &__tools-scale {
@@ -46,12 +43,16 @@ margin-top: 40px;
     background-color: #f2f2f2;
     border: 2px solid #d22856;
     border-radius: 50%;
-    right: 72px;
+    right: 85px;
     top: -6px;
   }
 
+  &__tools-scale-bubble:active {
+    background-color: #d22856;
+  }
+
   &__send {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
     margin-top: 45px;
   }
 
@@ -71,22 +72,76 @@ margin-top: 40px;
     color: #d22856;
   }
 
+  &__link--send:hover {
+    background-color: #d22856;
+    color: #FFFFFF;
+  }
+
+  &__link--send:active {
+    color: #e06989;
+  }
+
   &__link--canceled {
     border: 2px solid #dddfe1;
     color: #dddfe0;
   }
 
+  &__link--canceled:hover {
+     border: 2px solid #b5b9be;
+     color: #b5b9be;
+  }
+
+  &__link--canceled:active {
+    background-color: #b5b9be;
+    color: #cbced2;
+  }
+
   &__tools-scale--item {
     display: none;
+  }
+
+  &__picture {
+    width: 280px;
+    height: 374px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+
+  &__tool-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 15px;
+  }
+
+  &__tool-icon svg:hover {
+    fill: #b5b9be;
+  }
+
+  &__tool-icon svg:active {
+    fill: #8d949b;
+  }
+
+  &__tool-icon--editor{
+    fill: #d22856;
+  }
+
+  &__tool-icon--contrast {
+    margin-top: 10px;
+    fill: #b5b9be;
+  }
+
+  &__tool-icon--diagram {
+    fill: #b5b9be;
   }
 }
 
 @media @tablet-widths {
   .photo-upload {
     width: 100%;
+    margin-top: 45px;
 
     &__container-text {
-      margin-bottom: 125px;
+      margin-bottom: 60px;
     }
 
     &__head-text {
@@ -101,7 +156,8 @@ margin-top: 40px;
     }
 
     &__picture {
-      width: 45%;
+      width: 300px;
+      height: 400px;
     }
 
     &__tools {
@@ -131,6 +187,7 @@ margin-top: 40px;
       display: flex;
       flex-direction: row-reverse;
       margin-bottom: 8px;
+      margin-left: 35px;
     }
 
     &__tools-scale-rail {
@@ -151,6 +208,42 @@ margin-top: 40px;
       left: 190px
     }
 
+    &__tool-icon {
+      margin: 10px 40px;
+    }
+
+    &__tool-icon svg {
+      position: relative;
+      z-index: 50;
+      fill: #d22856;
+      margin-top: 0;
+    }
+
+    &__tool-icon--diagram,
+    &__tool-icon--editor {
+      width: 22px;
+      height: 22px;
+    }
+
+    &__tool-icon--contrast {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__tool-icon {
+      width: 23px;
+      height: 23px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    &__tool-icon svg:hover {
+      fill: #b5b9be;
+    }
+
+    &__tool-icon svg:active {
+      fill: #8d949b;
+    }
 
     &__send {
      margin-top: 65px;
@@ -165,12 +258,14 @@ margin-top: 40px;
 
 @media @desktop-widths {
   .photo-upload {
+    margin-top: 5px;
+
     &__picture {
-      width: 38%;
+      margin-left: 85px;
     }
 
     &__tools {
-      margin-right: 30px;
+      margin-right: 70px;
     }
 
     &__tools-list {
@@ -188,6 +283,7 @@ margin-top: 40px;
 
     &__tools-scale {
       margin-bottom: 19px;
+      margin-left: 0;
     }
 
     &__tools-scale-rail {
@@ -208,11 +304,30 @@ margin-top: 40px;
       left: 260px
     }
 
+    &__tool-icon {
+      width: 23px;
+      height: 23px;
+      margin-top: 13px;
+      margin-bottom: 40px;
+    }
+
+    &__tool-icon--diagram,
+    &__tool-icon--editor {
+      width: 44px;
+      height: 44px;
+    }
+
+    &__tool-icon--contrast {
+      width: 32px;
+      height: 32px;
+      margin-left: 5px;
+    }
+
     &__send {
       display: flex;
       flex-direction: row;
       width: 450px;
-      margin: 115px 0 70px 30px;
+      margin: 115px 0 70px 45px;
     }
 
     &__link {

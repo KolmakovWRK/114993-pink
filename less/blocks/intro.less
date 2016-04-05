@@ -1,6 +1,6 @@
 .intro {
-  padding: 0 20px;
-  margin-top: 110px;
+  width: 300px;
+  margin: 110px auto 0 auto;
 
   &__title {
     color: #ffffff;
@@ -11,8 +11,8 @@
   }
 
   &--correct-intro {
-    padding: 0 70px;
-    margin-top: 110px;
+    width: 200px;
+    margin: 110px auto 0 auto;
   }
 }
 
@@ -22,6 +22,7 @@
 
 @media @tablet-widths{
   .intro {
+    width: 500px;
     margin-top: 190px;
 
     &__title {
@@ -33,8 +34,8 @@
       display: block;
       width: 235px;
       height: 150px;
-      margin-left: 50px;
       margin-top: 225px;
+      margin-left: 50px;
     }
 
     &__title--correct-title {
@@ -44,7 +45,7 @@
     }
 
     &--correct-intro {
-      padding: 0 70px;
+      width: 360px;
       margin-top: 190px;
     }
   }
@@ -52,12 +53,15 @@
 
 @media @desktop-widths {
   .intro {
+    width: 55%;
     margin-top: 177px;
 
     &--main {
+      width: 300px;
       height: 177px;
-      margin-left: 490px;
       margin-top: 245px;
+      margin-left: 10px;
+
     }
 
     &__title {
@@ -66,11 +70,9 @@
     }
 
     &--correct-intro {
+      width: 550px;
       margin-top: 175px;
     }
 
-    &__title--correct-title {
-      padding: 0 85px;
-    }
   }
 }

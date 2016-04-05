@@ -10,10 +10,30 @@
 
   &__icon {
     display: block;
-    width: 51px;
-    height: 51px;
+    width: 45px;
+    height: 45px;
     border: 3px solid #e9ebec;
     border-radius: 50%;
     margin: 0 5px;
+  }
+
+  &__icon:hover {
+    border: 3px solid #283645;
+  }
+
+  &__icon:active {
+    filter: opacity(50%);
+    border: 3px solid #e9ebec;
+  }
+
+  &__icon--twitter svg,
+  &__icon--facebook svg,
+  &__icon--youtube svg {
+    fill: #d22856;
+    padding-top: 15px;
+  }
+
+  &__icon--youtube svg {
+    padding-left: 5px;
   }
 }

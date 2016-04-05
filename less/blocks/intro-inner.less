@@ -8,21 +8,20 @@
   }
 
   &__text {
+    width: 245px;
+    margin: 0 auto;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
   }
 
   &--intro-form {
-    width: 89%;
+    width: 285px;
     height: 120px;
     margin: 0 auto;
     text-align: center;
   }
 
-  &__text--hidden {
-    display: none;
-  }
 }
 
 @media @tablet-widths {
@@ -32,13 +31,14 @@
     margin: 50px auto 1px auto;
 
     &__text {
+      width: 465px;
       font-size: 18px;
       font-weight: 400;
       line-height: 30px;
     }
 
-    &__text--hidden {
-      display: block;
+    &__text-form:after {
+      content: "Пожалуйста, заполните форму ниже:";
     }
 
     &--intro-form {
@@ -61,7 +61,7 @@
     }
 
     &--intro-form {
-      width: 67%;
+      width: 80%;
     }
   }
 }

@@ -2,12 +2,26 @@
   min-width: 320px;
 
   &__copyright {
+    color: #000000;
     .margin-block-footer();
+  }
+
+  &__copyright{
+    fill: #d22856;
+  }
+
+  &__copyright:hover {
+    fill: #283645;
+  }
+
+  &__copyright:active {
+    fill: #bec2c7;
   }
 
   &__copyright-list {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   &__copyright-text {
@@ -15,11 +29,6 @@
     width: 100px;
     padding-top: 10px;
     font-size: 14px;
-  }
-
-  &__copyright-logo {
-    display: block;
-    width: 50px;
   }
 
   &__container {
@@ -35,7 +44,6 @@
       display: flex;
       justify-content: space-between;
       height: 100px;
-      padding-top: 30px;
     }
 
     &__copyright {
@@ -45,11 +53,35 @@
 
     &__copyright-list {
       margin-top: 11px;
+      margin-bottom: 0;
+    }
+
+    &__copyright-text {
+      font-size: 18px;
+      padding-right: 20px;
+      padding-top: 5px;
     }
 
     &__page-footer-inner-container {
       display: flex;
       justify-content: space-between;
+    }
+
+    &__copyright-logo {
+      display: block;
+      width: 30px;
+    }
+
+    &__logo-htmlacademy {
+      color: #d22856;
+    }
+
+    &__logo-htmlacademy:hover {
+      color: #000000;
+    }
+
+    &__logo-htmlacademy:active {
+      color: #dddfe1;
     }
   }
 }

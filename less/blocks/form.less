@@ -1,5 +1,7 @@
 .form {
   width: 100%;
+  margin-bottom: 20px;
+  position: relative;
 
   &__container {
     min-width: 320px;
@@ -9,20 +11,12 @@
     padding: 20px 30px;
   }
 
-  &__submit-error {
-    display: none;
-  }
-
-  &__submit-ok {
-    display: none;
-  }
-
   &__container--user-initials-container {
-    margin-bottom: 50px;
+    margin-bottom: 57px;
   }
 
   &__container--contact-information-container {
-    margin-top: 80px;
+    margin-top: 66px;
   }
 
   &__container--device-container {
@@ -30,7 +24,7 @@
   }
 
   &__container--user-review {
-    margin-top: 60px;
+    margin-top: 120px;
   }
 
   &__container--submit {
@@ -50,6 +44,14 @@
     border-radius: 3px;
   }
 
+  &__submit-btn:hover {
+    background-color: #1c9b5e;
+  }
+
+  &__submit-btn:active {
+    color: #61b98f;
+  }
+
   &__submit-text-required-fields {
     height: 60px;
     margin-top: 20px;
@@ -63,6 +65,67 @@
     color: #d22856;
   }
 
+  &__submit-text-required-fields:after {
+    content: "поля";
+  }
+
+  &__submit-ok {
+    padding-top: 50px;
+  }
+
+  &__submit-error {
+    padding: 50px 0;
+  }
+
+  &__submit-ok,
+  &__submit-error {
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    width: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 #cacaca;
+    border-radius: 5px;
+  }
+
+  &__submit-ok--hidden,
+  &__submit-error {
+    display: none;
+  }
+
+  &__submit-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  &__submit-text {
+    width: 260px;
+    margin: 0 auto 40px auto;
+    color: #283645;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  &__submit-btn--ok {
+    width: 280px;
+    margin: 50px auto 0 auto;
+  }
+
+  &__submit-text--error{
+    width: 300px;
+  }
+
+  &__container-background {
+    background-color: #f2f2f2;
+    height: 160px;
+  }
+
 }
 
 @media @tablet-widths {
@@ -71,7 +134,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     &__container {
       width: 94%;
@@ -120,12 +183,51 @@
       margin-top: 0;
       text-align: right;
     }
+
+    &__submit-ok,
+    &__submit-error {
+      width: 460px;
+      margin: 0 auto;
+    }
+
+    &__submit-title {
+      width: 305px;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto 30px auto;
+    }
+
+    &__submit-text {
+      width: 310px;
+      color: #283645;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__submit-btn--ok {
+      width: 300px;
+      margin: 50px auto 0 auto;
+    }
+
+    &__submit-title-error {
+      width: 230px;
+    }
+
+    &__submit-text--error{
+      width: 300px;
+      margin: 0 auto 40px auto;
+    }
   }
 }
 
 @media @desktop-widths {
   .form {
     display: flex;
+    margin-bottom: 10px;
+
+    &__container {
+      width: 100%;
+    }
 
     &__container--contact-information-container {
       margin: 0 auto;
@@ -144,6 +246,45 @@
 
     &__submit-text-required-fields {
       width: 550px;
+    }
+
+    &__container--submit {
+      margin-top: 50px;
+    }
+
+    &__submit-text-required-fields:after {
+      content: "для заполнения поля";
+    }
+
+    &__submit-ok {
+      width: 780px;
+    }
+
+    &__submit-title {
+      width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0 auto 30px auto;
+    }
+
+    &__submit-text {
+      width: 375px;
+      color: #283645;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__submit-btn--ok {
+      width: 460px;
+    }
+
+    &__submit-title-error {
+      width: 230px;
+    }
+
+    &__submit-text--error{
+      width: 300px;
+      margin: 0 auto 40px auto;
     }
   }
 }
