@@ -1,0 +1,187 @@
+.post {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+
+  &--overall-width {
+    min-width: 320px;
+    padding: 0;
+    background: #FFFFFF;
+  }
+
+  &__author {
+    padding: 0 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__author--best-post {
+    padding: 0 35px 20px 35px;
+    background: #f2f2f2;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    flex-grow: 0;
+    background-color: #978F96;
+  }
+
+  &__picture--full-width {
+    width: 100%;
+    height: 137px;
+    background-color: #978F96;
+    position: relative;
+    margin: 0;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__like {
+    vertical-align: bottom;
+  }
+
+  &__author-name {
+    font-weight: 700;
+  }
+
+  &__author-time {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &__like-text {
+    color: #d22856;
+    position: relative;
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+
+  &__like-text:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon-heart.svg") no-repeat;
+    background-size: contain;
+  }
+}
+
+@media @tablet-widths {
+  .post {
+    width: 300px;
+    min-height: 450px;
+    padding: 0;
+    margin-bottom: 25px;
+
+    &--overall-width {
+      width: 100%;
+      height: auto;
+      margin-bottom: 65px;
+    }
+
+    &__picture {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &__picture--full-width {
+      margin: 0;
+      width: 100%;
+      height: 510px;
+    }
+
+    &__author {
+      padding: 0 25px;
+    }
+
+    &__author--best-post {
+      margin-top: 0;
+      padding: 20px 45px;
+      position: relative;
+    }
+
+    &__text--best {
+      width: 530px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+    }
+
+    &__like-text--best {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 80px;
+    }
+
+    &__like-text {
+      display: block;
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &__like-text:before {
+      left: 230px;
+    }
+
+    &__like-text--best:before {
+      left: 110px;
+    }
+  }
+}
+
+
+@media @desktop-widths {
+  .post {
+    margin-bottom: 55px;
+    padding: 0;
+    min-height: 555px;
+
+    &--overall-width {
+      margin-bottom: 55px;
+    }
+
+    &__picture {
+      height: 400px;
+    }
+
+    &__picture--full-width {
+      width: 100%;
+      height: 507px;
+    }
+
+    &__author--best-post {
+      padding: 20px 35px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      margin-bottom: 10px;
+    }
+
+    &__text--best {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+  }
+}

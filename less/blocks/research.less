@@ -1,0 +1,125 @@
+.research{
+  display: none;
+}
+
+@media @tablet-widths {
+  .research {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+
+    &__research-container {
+      display: inline-flex;
+      position: relative;
+    }
+
+    &__picture-timer{
+      width: 240px;
+      height: 270px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    &__picture-timer-svg {
+      fill: #dedede;
+      width: 240px;
+      height: 270px;
+    }
+
+    &__picture-timer:before {
+      content: "24";
+      position: absolute;
+      top: 73px;
+      left: 40px;
+      display: block;
+      width: 175px;
+      height: 175px;
+      border: 13px solid #d22856;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 96px;
+      line-height: 160px;
+      color: #d22856;
+      font-weight: 700;
+    }
+
+    &__text {
+      width: 60%;
+      height: auto;
+      margin-top: 55px;
+      text-align: left;
+      font-size: 14px;
+      margin-left: 70px;
+    }
+
+    &__title {
+      width: 180px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+
+    &__story {
+      margin-bottom: 16px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &__link {
+      color: #d22856;
+      border-bottom: 1px solid #d22856;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .research {
+    &__text {
+      width: 56%;
+      margin-left: 60px;
+      margin-top: 90px;
+    }
+
+    &__title {
+      width: 400px;
+      margin-bottom: 19px;
+    }
+
+    &__story {
+      margin-bottom: 35px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__link {
+      color: #d22856;
+      border-bottom: 1px solid #d22856;
+      font-size: 18px;
+    }
+
+    &__picture-timer{
+      width: 300px;
+      height: 345px;
+      margin-left: 20px;
+    }
+
+    &__picture-timer-svg {
+      fill: #dedede;
+      width: 300px;
+      height: 345px;
+    }
+
+    .research__picture-timer:before {
+      top: 90px;
+      left: 45px;
+      width: 215px;
+      height: 215px;
+      border: 18px solid #d22856;
+      font-size: 115px;
+      line-height: 202px;
+    }
+  }
+}

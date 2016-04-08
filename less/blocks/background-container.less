@@ -1,0 +1,57 @@
+.background-container {
+  width: 100%;
+  position: relative;
+  background-color: #f2f2f2;
+  padding-top: 0;
+}
+
+.background-container:before {
+  content: "";
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  top: -40px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
+}
+
+.background-container--desktop:before {
+  display: none;
+}
+
+.background-container--price:before {
+  top: 0;
+}
+
+@media @tablet-widths {
+  .background-container {
+    padding-top: 35px;
+
+    &--desktop {
+      background-color: #FFFFFF;
+    }
+  }
+
+  .background-container--desktop:before {
+    display: none;
+  }
+
+  .background-container:before {
+    top: -15px;
+    width: 100%;
+    height: 95px;
+  }
+}
+
+@media @desktop-widths {
+  .background-container {
+    background-color: #f2f2f2;
+  }
+
+  .background-container:before {
+    top: 0;
+    height: 110px;
+  }
+}

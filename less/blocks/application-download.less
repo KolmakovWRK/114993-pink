@@ -1,0 +1,114 @@
+.application-download {
+  min-width: 320px;
+  height: 260px;
+  margin-top: 470px;
+  background-color: #1d2631;
+  padding-top: 13px;
+
+  &__link {
+    display: block;
+    width: 275px;
+    height: 17px;
+    margin: 16px auto;
+    border: 3px solid #ffffff;
+    border-radius: 26px;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 13px;
+    padding: 17px 0;
+  }
+
+  &__link:hover {
+    color: #d22856;
+    background-color: #FFFFFF;
+  }
+
+  &__link:active {
+    color: rgba(210, 40, 86, 0.4);
+  }
+
+  &__apps-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__apps-item {
+    display: block;
+    margin: 0 15px;
+    width: 50px;
+    height: 60px;
+    background-color: #CCEEFF;
+  }
+
+  &__text{
+    width: 289px;
+    height: 37px;
+    margin: 5px auto;
+    color: #ffffff;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  &__apps-item--apple {
+    background: url("../img/logo-apple.svg") no-repeat;
+  }
+
+  &__apps-item--android {
+    background: url("../img/logo-android.svg") no-repeat 5px 8px;
+  }
+
+  &__apps-item--microsoft {
+    background: url("../img/logo-microsoft.svg") no-repeat 3px 11px;
+  }
+}
+
+@media @tablet-widths {
+  .application-download {
+    width: 320px;
+    height: 305px;
+    margin-top: 25px;
+    background-color: rgba(29, 38, 49, 0.01);
+    padding-top: 0;
+
+    &__apps-list {
+      margin-top: 45px;
+      margin-bottom: 31px;
+    }
+
+    &__link {
+      width: 293px;
+      margin-left: 18px;
+    }
+
+    &__text {
+      width: 300px;
+      margin: 15px auto;
+      font-size: 18px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .application-download {
+    margin-top: 50px;
+
+    &__link {
+      font-size: 21px;
+      margin-left: 10px;
+    }
+
+    &__apps-list {
+      margin-top: 65px;
+    }
+
+    &__text {
+      margin: 48px auto;
+    }
+  }
+}

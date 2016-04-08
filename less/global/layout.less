@@ -1,0 +1,46 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "opensans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645;
+}
+
+.layout-center-wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #000000;
+}
+
+@media @tablet-widths {
+  .layout-center-wrapper {
+    width: 660px;
+
+    &--nav-menu {
+      width: 100%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .layout-center-wrapper {
+    width: 960px;
+
+    &--nav-menu {
+      width: 960px;
+    }
+  }
+}
+
+main {
+  min-width: 320px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}

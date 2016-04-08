@@ -1,0 +1,67 @@
+.intro-inner {
+  width: 78%;
+  height: 140px;
+  margin: 45px auto 0 auto;
+
+  &--correct {
+    margin: 0 auto;
+  }
+
+  &__text {
+    width: 245px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &--intro-form {
+    width: 285px;
+    height: 120px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
+
+@media @tablet-widths {
+  .intro-inner {
+    width: 78%;
+    height: 130px;
+    margin: 50px auto 1px auto;
+
+    &__text {
+      width: 465px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__text-form:after {
+      content: "Пожалуйста, заполните форму ниже:";
+    }
+
+    &--intro-form {
+      width: 83%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .intro-inner {
+    width: 65%;
+    margin: 46px auto 20px auto;
+
+    &__text {
+      width: 595px;
+      margin: 0 auto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &--intro-form {
+      width: 80%;
+    }
+  }
+}

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Pink by Kirill Kolmakov: Index</title>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  </head>
-  <body>
-    <header>
-      <nav class="nav-menu">
-        <div class="layout-center-wrapper  layout-center-wrapper--nav-menu">
-          <div>
-            <a class="logo  logo--nav-menu" href="#">
-              <svg class="logo__logo-main  logo__logo-main--nav-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink by Kirill Kolmakov: Photo</title>
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-menu">
+      <div class="layout-center-wrapper  layout-center-wrapper--nav-menu">
+        <div>
+          <a class="logo  logo--nav-menu" href="#">
+            <svg class="logo__logo-main  logo__logo-main--nav-menu" version="1.1" xmlns="http://www.w3.org/2000/svg"
                    width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g class="logo__logo-pink  logo__logo-pink--nav-menu">
                   <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063
@@ -84,14 +86,14 @@
                   </g>
                 </g>
               </svg>
-            </a>
-          </div>
-          <a class="nav-menu__toggle-menu-icon  nav-menu__toggle-menu-icon--burger" href="#"></a>
-          <div class="nav-menu__container  nav-menu__container--hidden">
-            <ul class="nav-menu__list">
-              <li>
-                <a class="nav-menu__logo" href="#">
-                  <svg class="nav-menu__svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          </a>
+        </div>
+        <a class="nav-menu__toggle-menu-icon  nav-menu__toggle-menu-icon--burger" href="#"></a>
+        <div class="nav-menu__container  nav-menu__container--hidden">
+          <ul class="nav-menu__list">
+            <li>
+              <a class="nav-menu__logo" href="#">
+                <svg class="nav-menu__svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                     <g>
                       <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064
@@ -123,290 +125,277 @@
                       c4.475,0,8.181,3.26,8.896,7.531c0.082,0.489,0.135,0.988,0.135,1.5S52.072,29.355,51.99,29.844z">
                     </path>
                   </svg>
-                </a>
-              </li>
-              <li><a class="nav-menu__toggle-menu-icon  nav-menu__toggle-menu-icon--close" href="#"></a></li>
-              <li class="nav-menu__list-item"><a class="nav-menu__list-link  nav-menu__list-link--active-menu" href="#">Главная</a></li>
-              <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="photo.html">Фотографии</a></li>
-              <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="form.html">Конкурс</a></li>
-              <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
-            </ul>
-          </div>
+              </a>
+            </li>
+            <li><a class="nav-menu__toggle-menu-icon  nav-menu__toggle-menu-icon--close" href="#"></a></li>
+            <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="index.html">Главная</a></li>
+            <li class="nav-menu__list-item"><a class="nav-menu__list-link  nav-menu__list-link--active-menu" href="#">Фотографии</a></li>
+            <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="form.html">Конкурс</a></li>
+            <li class="nav-menu__list-item"><a class="nav-menu__list-link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <main>
-      <div class="intro-application-container  intro-application-container--main">
-        <div class="layout-center-wrapper">
-          <div class="intro  intro--main">
-            <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
-          </div>
+      <div class="intro-application-container  intro-application-container--intro-application-correct">
+        <div class="intro  intro--correct-intro">
+          <h1 class="intro__title  intro__title--correct-title">Фотографии пользователей</h1>
+        </div>
+      </div>
+      <div class="intro-inner  intro-inner--correct">
+        <p class="intro-inner__text">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+      </div>
 
-          <div class="application-download">
-            <div>
-              <a class="application-download__link  application-download__link--round-link" href="#">Cкачать приложение</a>
+      <div class="post  post--overall-width">
+        <div class="post__picture  post__picture--full-width">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" class="post__picture--full-width" alt="Панорама">
+          </picture>
+          <div class="best-picture">
+            <p>Панорама дня</p>
+          </div>
+        </div>
+        <div class="layout-center-wrapper">
+          <div class="post__author post__author--best-post">
+            <div class="post__text  post__text--best">
+              <span class="post__author-name">Анна</span>
+              <span class="post__author-time">(5 минут назад)</span>
+              <p class="post__author-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе,
+                задавайте свои вопросы!</p>
             </div>
 
-            <ul class="application-download__apps-list">
-              <li>
-                <a class="application-download__apps-item  application-download__apps-item--apple" href="#"></a>
-              </li>
-              <li>
-                <a class="application-download__apps-item  application-download__apps-item--android" href="#"></a>
-              </li>
-              <li>
-                <a class="application-download__apps-item  application-download__apps-item--microsoft" href="#"></a>
-              </li>
-            </ul>
-
-            <div class="application-download__text">
-              <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <div class="post__like">
+              <a class="post__like-text  post__like-text--best">Нравится:215</a>
             </div>
           </div>
         </div>
       </div>
+
 
       <div class="layout-center-wrapper">
-        <div class="information">
-          <div class="information__container-title">
-            <p class="information__title">Устали от серости мегаполиса?</p>
-            <p class="information__title  information__title--flacky">Нам есть, что вам предложить!</p>
-          </div>
-        </div>
-      </div>
-      <div class="background-container">
-        <div class="layout-center-wrapper">
-          <div class="information__article-container">
-            <div class="information__article-container-inner">
-              <div class="information__article">
-                <h2 class="information__article-title">Поднимает настроение</h2>
-                <p class="information__article-story">
-                  Приложение позволит вам победить осеннюю хандру и депрессию
-                  буквально в несколько кликов!
-                </p>
-              </div>
-              <div class="information__article">
-                <h2 class="information__article-title">Меняет мир вокруг</h2>
-                <p class="information__article-story">
-                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-                </p>
-              </div>
-              <div class="information__article">
-                <h2 class="information__article-title">Заводит новых друзей</h2>
-                <p class="information__article-story">
-                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-                </p>
-              </div>
+        <div class="posts">
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                   class="post__picture-img" alt="Камера">
+              </picture>
             </div>
 
-            <div class="information__picture">
-              <div class="information__picture-iphone information__picture--index"></div>
-              <div class="information__picture-iphone information__picture--index"></div>
-              <div class="information__picture-iphone"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="background-container  background-container--desktop">
-        <div class="layout-center-wrapper">
-          <div class="research">
-            <div class="research__research-container">
-              <div class="research__picture-timer">
-                <svg class="research__picture-timer-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="298px" height="345.097px" viewBox="0 0 298 345.097"
-                     enable-background="new 0 0 298 345.097" xml:space="preserve">
-                  <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385
-                    C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317
-                    c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097
-                    c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264
-                    c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167
-                    S209.843,306.264,149,306.264z">
-                    </path>
-                  </svg>
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Левон</span>
+                <span class="post__author-time">(5 часов назад)</span>
+                <p class="post__author-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </div>
 
-              <div class="research__text">
-                <h2 class="research__title">Эффект на 24 часа!</h2>
-
-                <p class="research__story">
-                  Британские ученые провели исследования
-                  и доказали, что положительный эффект
-                  от использования приложения длится
-                  целые сутки!
-                </p>
-                <a class="research__link" href="#">Узнать больше об исследовании</a>
+              <div class="post__like">
+                <a class="post__like-text">Нравится:356</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="layout-center-wrapper">
-        <div class="review">
-          <div class="review__toggle">
-            <a class="review__toggle-pointer  review__toggle-pointer--left" href="#"></a>
-            <a class="review__toggle-pointer  review__toggle-pointer--right" href="#"></a>
-          </div>
 
-          <div class="slider">
-            <div class="slider__control">
-              <input class="slider__control-element-checked-1" type="radio" id="btn-1" name="btn" checked>
-              <input class="slider__control-element-checked-2" type="radio" id="btn-2" name="btn">
-              <input class="slider__control-element-checked-3" type="radio" id="btn-3" name="btn">
-              <div class="slider__slider-controls">
-                <label class="slider__control-element  slider__control-element-1" for="btn-1"></label>
-                <label class="slider__control-element  slider__control-element-2" for="btn-2"></label>
-                <label class="slider__control-element  slider__control-element-3" for="btn-3"></label>
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                     class="post__picture-img" alt="Музыкальный инструмент">
+              </picture>
+            </div>
+
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Антон</span>
+                <span class="post__author-time">(12 часов назад)</span>
+                <p class="post__author-text">
+                  Соседи будут рады!
+                </p>
               </div>
 
-              <div class="slider__list">
-                <div class="review__container">
-                  <div class="review__item">
-                    <div class="review__user">
-                      <h2 class="review__author">Николай Петров</h2>
-                      <p class="review__employment">25 лет, водитель трамвая</p>
+              <div class="post__like">
+                <a class="post__like-text">Нравится:666</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                     class="post__picture-img" alt="Cтеклянная крыша">
+              </picture>
+            </div>
+
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Борис</span>
+                <span class="post__author-time">(20 часов назад)</span>
+                <p class="post__author-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              </div>
+
+              <div class="post__like">
+                <a class="post__like-text">Нравится:215</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                     class="post__picture-img" alt="Ярмарка">
+              </picture>
+            </div>
+
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Сергей</span>
+                <span class="post__author-time">(25 часов назад)</span>
+                <p class="post__author-text">
+                  Самая кубанская в мире!
+                </p>
+              </div>
+
+              <div class="post__like">
+                <a class="post__like-text">Нравится:4</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"
+                     class="post__picture-img" alt="Горы">
+              </picture>
+            </div>
+
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Максим</span>
+                <span class="post__author-time">(40 часов назад)</span>
+                <p class="post__author-text">
+                  Где снег-то?
+                </p>
+              </div>
+
+              <div class="post__like">
+                <a class="post__like-text">Нравится:150</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post">
+            <div class="post__picture">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"
+                     class="post__picture-img" alt="Вид с самолета ">
+              </picture>
+            </div>
+
+            <div class="post__author">
+              <div class="post__text">
+                <span class="post__author-name">Надежда</span>
+                <span class="post__author-time">(45 часов назад)</span>
+                <p class="post__author-text">
+                  Всем GM и взаимные лайки!
+                </p>
+              </div>
+
+              <div class="post__like">
+                <a class="post__like-text">Нравится:2560</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-upload">
+            <div class="photo-upload__container-text">
+              <p class="photo-upload__head-text">Затмите их всех!</p>
+              <p class="photo-upload__head-text">Выкладывайте все, что накопилось в телефоне!</p>
+            </div>
+
+            <div class="photo-upload__container-inner">
+              <div class="photo-upload__picture">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+                  <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x"
+                       class="photo-upload__picture-img" alt="Снежная дорога">
+                </picture>
+              </div>
+
+              <div class="photo-upload__tools">
+                <div class="photo-upload__container-tools">
+                  <div class="photo-upload__list">
+                    <ul class="photo-upload__tools-list">
+                      <li class="photo-upload__tool-icon">
+                        <svg class="photo-upload__tool-icon--editor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                          <path fill="none" d="M0,0h48v48H0V0z"></path>
+                          <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
+                        </svg>
+                      </li>
+                      <li class="photo-upload__tool-icon">
+                        <svg class="photo-upload__tool-icon--diagram" version="1.1" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                          <path fill="none" d="M0,0h48v48H0V0z"></path>
+                          <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34
+                            s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7
+                            c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
+                          <rect y="40" width="48" height="3"></rect>
+                        </svg>
+                      </li>
+                      <li class="photo-upload__tool-icon">
+                        <svg class="photo-upload__tool-icon--contrast" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                           width="32px" height="31.92px" viewBox="-35.422 -7.96 32 31.92" enable-background="new -35.422 -7.96 32 31.92"
+                           xml:space="preserve">
+                          <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8
+                          S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8
+                          C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
+                          <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="photo-upload__container-tools-scale">
+                    <div class="photo-upload__tools-scale">
+                      <div class="photo-upload__tools-scale-rail"></div>
+                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--first"></div>
                     </div>
-                    <p class="review__story">
-                      &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                      А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-                    </p>
-
-                    <div class="review__picture"></div>
-                  </div>
-                  <div class="review__item">
-                    <h2 class="review__author">Lorem ipsum</h2>
-                    <p class="review__story">
-                      &laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aspernatur assumenda aut autem,
-                      commodi cupiditate deleniti eveniet excepturi fugiat id illo, iure mollitia odio odit praesentium quae
-                      quo quos similique.&raquo;
-                    </p>
-                  </div>
-                  <div class="review__item">
-                    <h2 class="review__author">Lorem ipsum</h2>
-                    <p class="review__story">
-                      &laquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi eveniet laudantium
-                      magni mollitia nam officiis placeat quia reiciendis repudiandae?&raquo;
-                    </p>
+                    <div class="photo-upload__tools-scale  photo-upload__tools-scale--item">
+                      <div class="photo-upload__tools-scale-rail"></div>
+                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--second"></div>
+                    </div>
+                    <div class="photo-upload__tools-scale  photo-upload__tools-scale--item">
+                      <div class="photo-upload__tools-scale-rail"></div>
+                      <div class="photo-upload__tools-scale-bubble  photo-upload__tools-scale-bubble--three"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-
-      <div class="background-container  background-container--price">
-        <div class="layout-center-wrapper">
-          <div class="price">
-            <div class="slider">
-              <div class="slider__control">
-                <input class="slider__control-element-price-checked-1" type="radio" id="toggle-1" name="toggle" >
-                <input class="slider__control-element-price-checked-2" type="radio" id="toggle-2" name="toggle" checked>
-                <input class="slider__control-element-price-checked-3" type="radio" id="toggle-3" name="toggle">
-                <div class="slider__slider-controls  slider__slider-controls--price">
-                  <label class="slider__control-element-price  slider__control-element-1" for="toggle-1"></label>
-                  <label class="slider__control-element-price  slider__control-element-2" for="toggle-2"></label>
-                  <label class="slider__control-element-price  slider__control-element-3" for="toggle-3"></label>
-                </div>
-
-                <div class="slider__list  slider__list--table">
-                  <table class="price__table">
-                    <tr>
-                      <th class="price__table-head-invisible">
-                      </th>
-                      <th class="price__table-head  price__table-head--hot">
-                        <p class="price__table-head-name">база</p>
-                        <p class="price__table-head-price">1,99 USD</p>
-                      </th>
-                      <th class="price__table-head  price__table-head--hit">
-                        <p class="price__table-head-name">стандарт</p>
-                        <p class="price__table-head-price">3,99 USD</p>
-                      </th>
-                      <th class="price__table-head  price__table-head--hot">
-                        <p class="price__table-head-name">анлим</p>
-                        <p class="price__table-head-price">9,99 USD</p>
-                      </th>
-                    </tr>
-                    <tr>
-                      <td class="price__table-cell">
-                        <p class="price__table-option">Розовый фильтр</p>
-                      </td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                    </tr>
-                    <tr>
-                      <td class="price__table-cell">
-                        <p class="price__table-option">Смайлики</p>
-                      </td>
-                      <td class="price__table-cell  price__table-cell--exclude"></td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                    </tr>
-                    <tr>
-                      <td class="price__table-cell">
-                        <p class="price__table-option">Комментарии</p>
-                      </td>
-                      <td class="price__table-cell  price__table-cell--exclude"></td>
-                      <td class="price__table-cell  price__table-cell--exclude"></td>
-                      <td class="price__table-cell  price__table-cell--included"></td>
-                    </tr>
-                  </table>
-
-                  <table class="price__table-mobile">
-                    <thead>
-                      <tr>
-                        <th class="price__table-head  price__table-head--hot">
-                          <p class="price__table-head-name">база</p>
-                          <p class="price__table-head-price">1,99 USD</p>
-                        </th>
-                        <th class="price__table-head  price__table-head--hit">
-                          <p class="price__table-head-name">стандарт</p>
-                          <p class="price__table-head-price">3,99 USD</p>
-                        </th>
-                        <th class="price__table-head  price__table-head--hot">
-                          <p class="price__table-head-name">анлим</p>
-                          <p class="price__table-head-price">9,99 USD</p>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Розовый фильтр</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Розовый фильтр</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Розовый фильтр</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Смайлик</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Смайлики</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--included">
-                          <p class="price__table-option">Смайлик</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="price__table-cell  price__table-cell--exclude">
-                          <p class="price__table-option">Комментарии</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--exclude">
-                          <p class="price__table-option">Комментарии</p>
-                        </td>
-                        <td class="price__table-cell  price__table-cell--exclude">
-                          <p class="price__table-option">Комментарии</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="photo-upload__send">
+                  <a class="photo-upload__link  photo-upload__link--send" href="#">Запостить</a>
+                  <a class="photo-upload__link  photo-upload__link--canceled" href="#">Отмена</a>
                 </div>
               </div>
             </div>
@@ -415,35 +404,8 @@
       </div>
     </main>
 
-
     <footer class="page-footer">
-      <div class="main-page-footer">
-        <h2 class="main-page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
-        <div class="main-page-footer__contacts">
-          <div class="main-page-footer__contact  main-page-footer__contact--phone">
-            <h2 class="main-page-footer__contact-text">Звоните:</h2>
-            <span class="main-page-footer__contact-value">+7(812)555-66-66</span>
-          </div>
-
-          <div class="main-page-footer__contact  main-page-footer__contact--email">
-            <h2 class="main-page-footer__contact-text">Пишите:</h2>
-            <a href="#" class="main-page-footer__contact-value  main-page-footer__contact-value--email">mail@htmlacademy.ru</a>
-          </div>
-
-          <div class="main-page-footer__contact  main-page-footer__contact--address">
-            <h2 class="main-page-footer__contact-text">Приезжайте в гости:</h2>
-            <span class="main-page-footer__contact-value">ул. Большая Конюшенная, 19/8 </span>
-          </div>
-        </div>
-      </div>
-
-       <div class="address-map">
-         <iframe class="address-map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3703976330519!2d30.32259667319025!3d59.938898541505424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1459143248370"
-                    style="border:0"></iframe>
-       </div>
-
-
-      <div class="page-footer__container">
+      <div class="page-footer__page-footer-inner-container">
         <div class="logo">
           <a class="logo  logo--page-footer" href="#">
             <svg class="logo__logo-main  logo__logo-main--page-footer" version="1.1" xmlns="http://www.w3.org/2000/svg" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -552,7 +514,6 @@
                      viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                     <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932
                       c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z">
-
                     </path>
                 </svg>
               </a>

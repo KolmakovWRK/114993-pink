@@ -1,0 +1,146 @@
+.review {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    width: 2000px;
+    margin-left: -150px;
+  }
+
+  &__item {
+    padding: 38px 10px 20px;
+    width: 300px;
+    margin-left: 150px;
+  }
+
+  &__author {
+    color: #000000;
+    font-family:"opensans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  &__employment {
+    display: none;
+  }
+
+  &__story {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__picture {
+    display: none;
+  }
+
+  &__toggle {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .review {
+    &__container {
+      width: 360%;
+      margin-left: -85px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 660px;
+    }
+
+    &__employment {
+      display: block;
+      font-size: 14px;
+    }
+
+    &__story {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .review {
+    width: 100%;
+    position: relative;
+
+    &__container {
+      width: 2142px;
+      margin-left: -10px;
+    }
+
+    &__item {
+      margin: 35px auto 0 auto;
+      width: 960px;
+    }
+
+    &__author {
+      font-size: 24px;
+    }
+
+    &__employment {
+      display: block;
+      font-size: 18px;
+    }
+
+    &__story {
+      margin-top: 45px;
+    }
+
+    &__picture {
+      display: block;
+      width: 80px;
+      height: 63px;
+      margin: 0 auto;
+      background-color: #c2ccd1;
+      background: url("../img/icon-quotes.svg") no-repeat;
+    }
+
+    &__toggle {
+      display: block;
+      position: absolute;
+      width: 950px;
+      height: 40px;
+      top: 215px;
+    }
+
+    &__toggle-pointer {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-right: 2px solid #caced1;
+      border-bottom: 2px solid #caced1;
+      border-radius: 2px;
+    }
+
+    &__toggle-pointer:hover{
+      border-right: 2px solid #7e868f;
+      border-bottom: 2px solid #7e868f;
+    }
+
+    &__toggle-pointer:active{
+      border-right: 2px solid #e9ebec;
+      border-bottom: 2px solid #e9ebec;
+    }
+
+    &__toggle-pointer--left {
+      position: absolute;
+      left: 10px;
+      transform: rotate(135deg);
+    }
+
+    &__toggle-pointer--right {
+      position: absolute;
+      right: 10px;
+      transform: rotate(-45deg);
+    }
+  }
+}
